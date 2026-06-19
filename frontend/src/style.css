@@ -1,0 +1,86 @@
+/* src/style.css
+ *
+ * Tokens de diseño — tema "manifiesto de carga / control de despacho":
+ * pensado para una herramienta interna de logística, no para un
+ * sitio de marketing. Paleta fría tipo papel de manifiesto + un único
+ * acento "sello" en rojo óxido para montos y la acción principal.
+ */
+
+:root {
+  /* Color */
+  --color-paper: #e7ece6;
+  --color-paper-deep: #dde4dc;
+  --color-surface: #ffffff;
+  --color-ink: #16241f;
+  --color-muted: #5c6b61;
+  --color-line: #cbd4c8;
+  --color-stamp: #b8402a;
+  --color-stamp-ink: #ffffff;
+  --color-signal: #2f6f4e;
+  --color-zone-norte: #2d6ca6;
+  --color-zone-sur: #2f6f4e;
+  --color-zone-centro: #b8842b;
+  --color-zone-varias: #5c6b61;
+  --color-error-bg: #fbe7e2;
+  --color-error-ink: #8a2f1a;
+
+  /* Tipografia */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* Layout */
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow-card: 0 1px 2px rgba(22, 36, 31, 0.06), 0 8px 24px rgba(22, 36, 31, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image: linear-gradient(
+      180deg,
+      var(--color-paper) 0%,
+      var(--color-paper-deep) 100%
+    );
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-zone-norte);
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-zone-norte);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
