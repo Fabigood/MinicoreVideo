@@ -11,11 +11,11 @@
 const { createClient } = require("@supabase/supabase-js");
 
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const supabaseServiceKey = process.env.SUPABASE_SECRET_KEY;
 
 if (!supabaseUrl || !supabaseServiceKey) {
   throw new Error(
-    "Faltan SUPABASE_URL y/o SUPABASE_SERVICE_ROLE_KEY. " +
+    "Faltan SUPABASE_URL y/o SUPABASE_SECRET_KEY. " +
       "Copia backend/.env.example a backend/.env y completa los valores " +
       "desde tu proyecto de Supabase (Project Settings > API)."
   );
