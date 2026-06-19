@@ -121,4 +121,6 @@ Si el backend corre en otra URL, copia `frontend/.env.example` a
   backend ya desplegado.
 - **Supabase**: no se despliega nada, ya es un servicio en la nube;
   solo asegúrate de haber corrido `schema.sql` en el proyecto correcto.
+  ## 7.Link Video
+  https://youtu.be/5HsApc8ABmg
 
