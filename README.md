@@ -122,16 +122,3 @@ Si el backend corre en otra URL, copia `frontend/.env.example` a
 - **Supabase**: no se despliega nada, ya es un servicio en la nube;
   solo asegúrate de haber corrido `schema.sql` en el proyecto correcto.
 
-## 7. Documentación e info de entrega
-
-> Completa los enlaces marcados con `[ ]` antes de subir a Brightspace.
-
-- **Video explicativo:** `[link a Loom/YouTube]`
-- **Repositorio GitHub:** `[link a tu repositorio]`
-- **Proyecto deployado:** `[link directo a la pantalla de filtro de fechas]`
-- **Documentación oficial consultada:**
-  - Vue 3: https://vuejs.org/guide/introduction.html
-  - Express: https://expressjs.com/
-  - Supabase (supabase-js): https://supabase.com/docs/reference/javascript/introduction
-- **Videos/tutoriales de referencia:** `[link 1]` · `[link 2]`
-- **Contacto:** `alumno.apellido@udla.edu.ec` · `alumno@gmail.com` (opcional)
